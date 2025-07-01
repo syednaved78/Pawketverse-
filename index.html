@@ -11,47 +11,50 @@
     }
     body {
       font-family: 'Quicksand', sans-serif;
-      background: linear-gradient(to bottom, #1e0033, #5c007a, #ffe5f9);
-      color: #fff;
+      background: #fffafc;
+      color: #333;
     }
     header {
-      background: rgba(0, 0, 0, 0.3);
-      padding: 1rem 2rem;
+      background: #ffffff;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-      backdrop-filter: blur(10px);
     }
     header h1 {
       font-size: 2rem;
-      color: #e0aaff;
+      color: #ff69b4;
     }
     .hero {
+      background: url('https://cdn.pixabay.com/photo/2020/03/02/07/58/pets-4897179_960_720.jpg') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      padding: 3rem 1rem;
-      background: url('https://images.unsplash.com/photo-1601758003122-58e5f3c9f973?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover no-repeat;
-      background-blend-mode: lighten;
+      color: #fff;
+      position: relative;
     }
-    .hero img {
-      max-width: 300px;
-      border-radius: 1rem;
-      border: 4px solid #fff;
-      box-shadow: 0 0 15px #e0aaff;
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
     }
     .hero h2 {
-      margin-top: 1rem;
-      font-size: 2.2rem;
-      color: #fbc4ff;
-      text-shadow: 0 0 10px #fff;
+      font-size: 2.8rem;
+      z-index: 1;
+      text-shadow: 0 2px 10px #000;
     }
     .shop-section {
-      padding: 2rem;
+      padding: 3rem 2rem;
+      background: #fff0f5;
     }
     .shop-section h2 {
-      font-size: 1.8rem;
-      color: #ffe5f9;
-      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      color: #d63384;
+      margin-bottom: 2rem;
       text-align: center;
     }
     .product-grid {
@@ -60,72 +63,89 @@
       gap: 2rem;
     }
     .product-card {
-      background: rgba(255, 255, 255, 0.1);
+      background: #fff;
       border-radius: 1rem;
       padding: 1rem;
       text-align: center;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
       transition: 0.3s ease;
     }
     .product-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
     }
     .product-card img {
       width: 100%;
-      border-radius: 1rem;
+      border-radius: 0.8rem;
     }
     .product-card h3 {
-      margin-top: 0.7rem;
-      color: #e0aaff;
+      margin-top: 1rem;
+      color: #ff69b4;
     }
-    .product-card p.price {
-      margin: 0.5rem 0;
-      color: #fff;
+    .product-card .price {
+      font-weight: bold;
+      margin-top: 0.3rem;
+      color: #444;
+    }
+    .product-card button {
+      margin-top: 0.7rem;
+      background: #ff69b4;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .product-card button:hover {
+      background: #d61d74;
     }
     footer {
+      background: #ffe4f0;
+      padding: 2rem;
       text-align: center;
-      padding: 1.5rem;
-      background: rgba(0, 0, 0, 0.2);
-      color: #ddd;
-      margin-top: 2rem;
+      color: #444;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>PawketVerse 🐾</h1>
+    <h1>🐾 PawketVerse</h1>
   </header>
 
   <section class="hero">
-    <img src="https://cdn.pixabay.com/photo/2020/12/08/07/05/cat-5813586_960_720.jpg" alt="Astronaut Pet">
-    <h2>Explore the Galaxy of Cuteness!</h2>
+    <h2>Welcome to PawketVerse – Where Cats & Dogs Rule the Galaxy!</h2>
   </section>
 
   <section class="shop-section">
-    <h2>🌟 Cosmic Pet Collection</h2>
+    <h2>🌸 Cute Picks for Your Paw-Friends</h2>
     <div class="product-grid">
       <div class="product-card">
-        <img src="https://cdn.pixabay.com/photo/2019/09/02/09/59/collar-4445460_960_720.jpg" alt="Space Collar">
-        <h3>Galaxy Collar</h3>
-        <p class="price">₹299</p>
+        <img src="https://cdn.pixabay.com/photo/2020/08/07/16/35/dog-5470662_960_720.jpg" alt="Dog Hoodie">
+        <h3>Cozy Dog Hoodie</h3>
+        <p class="price">₹599</p>
+        <button>Add to Cart</button>
       </div>
       <div class="product-card">
-        <img src="https://cdn.pixabay.com/photo/2016/02/19/10/00/pet-bed-1209271_960_720.jpg" alt="Space Bed">
-        <h3>Comet Bed</h3>
-        <p class="price">₹799</p>
+        <img src="https://cdn.pixabay.com/photo/2017/07/31/11/22/cat-2568937_960_720.jpg" alt="Cat Hat">
+        <h3>Fluffy Cat Hat</h3>
+        <p class="price">₹399</p>
+        <button>Add to Cart</button>
       </div>
       <div class="product-card">
-        <img src="https://cdn.pixabay.com/photo/2018/06/14/21/26/dog-3479743_960_720.jpg" alt="Astronaut Toy">
-        <h3>Astro Toy</h3>
-        <p class="price">₹499</p>
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/04/05/animal-1867836_960_720.jpg" alt="Pet Toy">
+        <h3>Rainbow Rope Toy</h3>
+        <p class="price">₹249</p>
+        <button>Add to Cart</button>
       </div>
     </div>
   </section>
 
   <footer>
-    🚀 Made with love in the PawketVerse • All rights reserved
+    💌 Contact us at: pawketverse@gmail.com <br/>
+    &copy; 2025 PawketVerse. All rights reserved.
   </footer>
 
 </body>

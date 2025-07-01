@@ -1,74 +1,79 @@
-/* === PawketVerse Cosmic Theme CSS === */
-
 body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
-  background: linear-gradient(120deg, #fbeaff, #e0f7fa);
+  background: linear-gradient(120deg, #fdfbfb, #ebedee);
   color: #333;
 }
 
-/* Navigation Bar */
-nav {
-  background-color: #fff0f6;
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-  gap: 2rem;
-  font-weight: bold;
-}
-
-nav a {
-  color: #ff6f91;
-  text-decoration: none;
-}
-
-/* Header Section */
 header {
-  background: url('images/banner.jpg') center/cover no-repeat;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 2px 2px 8px #000;
-}
-
-/* Section Styling */
-section {
+  text-align: center;
   padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+  background: linear-gradient(90deg, #fbc2eb 0%, #a6c1ee 100%);
+  color: #fff;
+  border-radius: 0 0 30px 30px;
 }
 
-h1, h2 {
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+#shop h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
   color: #d63384;
 }
 
-/* Shop Coming Soon */
-.shop-coming {
-  background-color: #f8f9fa;
-  padding: 1rem;
-  border-left: 4px solid #ff6f61;
-  margin-top: 2rem;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #ffe4e1;
-  font-size: 0.9rem;
-}
-
-/* Product Grid & Card */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  margin-top: 1rem;
+  padding: 2rem;
 }
 
 .product-card {
-  background: #fff;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
   border-radius: 12px;
-  box-shadow: 0
+  height: 180px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  color: #6f42c1;
+  margin: 1rem 0 0.5rem;
+}
+
+.product-card p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #ff6f91;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #d61e55;
+}

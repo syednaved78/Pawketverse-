@@ -1,0 +1,57 @@
+body {
+
+  margin: 0;
+
+  font-family: 'Arial', sans-serif;
+
+  background-color: #fff8f0;
+
+  color: #333;
+
+}
+
+nav {
+
+  background-color: #ffddb0;
+
+  padding: 1rem;
+
+  display: flex;
+
+  justify-content: space-around;
+
+  font-weight: bold;
+
+}
+
+section {
+
+  padding: 2rem;
+
+  max-width: 800px;
+
+  margin: auto;
+
+}
+
+h1, h2 {
+
+  color: #ff6f61;
+
+}
+
+.button {
+
+  display: inline-block;
+
+  background: #ff6f61;
+
+  color: white;
+
+  padding: 0.5rem 1rem;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+}

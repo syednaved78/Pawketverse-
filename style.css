@@ -1,57 +1,74 @@
+/* === PawketVerse Cosmic Theme CSS === */
+
 body {
-
   margin: 0;
-
-  font-family: 'Arial', sans-serif;
-
-  background-color: #fff8f0;
-
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(120deg, #fbeaff, #e0f7fa);
   color: #333;
-
 }
 
+/* Navigation Bar */
 nav {
-
-  background-color: #ffddb0;
-
-  padding: 1rem;
-
+  background-color: #fff0f6;
   display: flex;
-
-  justify-content: space-around;
-
+  justify-content: center;
+  padding: 1rem;
+  gap: 2rem;
   font-weight: bold;
-
 }
 
+nav a {
+  color: #ff6f91;
+  text-decoration: none;
+}
+
+/* Header Section */
+header {
+  background: url('images/banner.jpg') center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 8px #000;
+}
+
+/* Section Styling */
 section {
-
   padding: 2rem;
-
   max-width: 800px;
-
   margin: auto;
-
 }
 
 h1, h2 {
-
-  color: #ff6f61;
-
+  color: #d63384;
 }
 
-.button {
-
-  display: inline-block;
-
-  background: #ff6f61;
-
-  color: white;
-
-  padding: 0.5rem 1rem;
-
-  border-radius: 8px;
-
-  text-decoration: none;
-
+/* Shop Coming Soon */
+.shop-coming {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-left: 4px solid #ff6f61;
+  margin-top: 2rem;
 }
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #ffe4e1;
+  font-size: 0.9rem;
+}
+
+/* Product Grid & Card */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0

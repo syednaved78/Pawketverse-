@@ -1,98 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2-in-1 Pet Steam Brush | PawketVerse</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PawketVerse 🐾 Cosmic Pet Grooming</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: 'Quicksand', sans-serif;
-      background: linear-gradient(180deg, #f5f0ff, #fff);
+      background: linear-gradient(180deg, #f3e7ff, #ffffff);
       color: #333;
     }
-    .top-banner {
+    header {
       background: #3e1d6c;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-      font-weight: bold;
-    }
-    .product-section {
-      max-width: 800px;
-      margin: 30px auto;
+      color: white;
       padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2em;
+    }
+    .hero {
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .hero img {
+      width: 250px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    .hero h2 {
+      margin-top: 20px;
+      font-size: 1.8em;
+      color: #7b1fa2;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .product-card {
       background: #fff;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
       border-radius: 16px;
+      padding: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
     }
-    .product-img {
+    .product-card img {
       width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 0 10px #d1c4e9;
+      border-radius: 10px;
     }
-    .price {
-      font-size: 1.5em;
+    .product-card h3 {
       margin-top: 10px;
-      color: #d32f2f;
+      font-size: 1.2em;
     }
-    .price del {
-      color: #999;
-      font-size: 0.8em;
-      margin-left: 10px;
+    .product-card p {
+      color: #d32f2f;
+      font-weight: bold;
     }
     .button {
       display: inline-block;
-      padding: 12px 25px;
-      margin: 20px 0;
+      margin-top: 10px;
       background: #7b1fa2;
       color: #fff;
-      border: none;
-      border-radius: 10px;
-      font-size: 1em;
+      padding: 10px 20px;
+      border-radius: 8px;
       text-decoration: none;
-      cursor: pointer;
     }
-    .features {
-      padding-left: 20px;
-    }
-    .features li {
-      margin: 8px 0;
-    }
-    .footer {
+    .why {
+      padding: 30px 20px;
+      background: #ede7f6;
       text-align: center;
-      font-size: 0.9em;
-      color: #666;
-      margin: 40px 0 20px;
+    }
+    .why h3 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+    .why ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1em;
+    }
+    .why li {
+      margin: 10px 0;
+    }
+    footer {
+      background: #3e1d6c;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
     }
     @media (max-width: 600px) {
-      .product-section {
-        margin: 15px;
-        padding: 15px;
-      }
-      .button {
-        width: 100%;
-        text-align: center;
+      .hero img {
+        width: 80%;
       }
     }
   </style>
 </head>
 <body>
-  <div class="top-banner">🐾 2 Lakh+ Happy Customers | Free Shipping | COD Available 🇮🇳</div>
-  <div class="product-section">
-    <img src="https://yourimageurl.com/steam-brush.jpg" class="product-img" alt="Steam Brush for Pets">
-    <h1>2-in-1 Pet Steam Brush (For Dogs & Cats)</h1>
-    <p class="price">₹999 <del>₹1,799</del></p>
-    <ul class="features">
-      <li>✅ Removes tangles, dirt & loose hair</li>
-      <li>💨 Steam-powered bristles for deep cleaning</li>
-      <li>🐶 Safe for all fur types – Dogs & Cats</li>
-      <li>🔥 No more shedding mess at home!</li>
-      <li>🚚 Free Shipping + Cash on Delivery</li>
+  <header>
+    <h1>🐾 Welcome to PawketVerse</h1>
+    <p>Cosmic Grooming for Your Furry Friends!</p>
+  </header>
+
+  <section class="hero">
+    <img src="https://i.postimg.cc/fLz6Nb91/pawketverse-dogcat-cosmic.png" alt="PawketVerse cosmic pets" />
+    <h2>Explore the Universe of Pet Grooming</h2>
+  </section>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="https://i.postimg.cc/XJ2PvRt2/steam-brush.jpg" alt="Steam Brush">
+      <h3>2-in-1 Steam Brush</h3>
+      <p>₹999 <del>₹1,799</del></p>
+      <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20the%20Steam%20Brush!" class="button">Order Now</a>
+    </div>
+    <div class="product-card">
+      <img src="https://i.postimg.cc/3NNSLyDd/bath-gloves.jpg" alt="Bath Gloves">
+      <h3>Doggo Bath Gloves</h3>
+      <p>₹699 <del>₹1,299</del></p>
+      <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20the%20Bath%20Gloves!" class="button">Order Now</a>
+    </div>
+    <div class="product-card">
+      <img src="https://i.postimg.cc/0QdnrN65/fur-roller.jpg" alt="Fur Roller">
+      <h3>Pet Fur Remover Roller</h3>
+      <p>₹499 <del>₹999</del></p>
+      <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20the%20Fur%20Roller!" class="button">Order Now</a>
+    </div>
+  </section>
+
+  <section class="why">
+    <h3>Why PawketVerse?</h3>
+    <ul>
+      <li>⭐ 2 Lakh+ Happy Customers</li>
+      <li>🚚 Free Shipping Across India</li>
+      <li>💸 Cash on Delivery Available</li>
     </ul>
-    <a href="https://wa.me/91XXXXXXXXXX?text=Hi%20PawketVerse%2C%20I%20want%20to%20order%20the%20Steam%20Brush!" class="button">Order Now on WhatsApp</a>
-  </div>
-  <div class="footer">© 2025 PawketVerse 🐾 | All rights reserved.</div>
+  </section>
+
+  <footer>
+    © 2025 PawketVerse 🐾 – Designed with Love for Your Pets
+  </footer>
 </body>
 </html>

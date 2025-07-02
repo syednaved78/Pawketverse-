@@ -1,79 +1,145 @@
-body {
+/* ===== Cosmic PawketVerse Style ===== */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Quicksand', sans-serif;
-  background: linear-gradient(120deg, #fdfbfb, #ebedee);
+  background: linear-gradient(to bottom right, #fff4fb, #f0e9ff);
   color: #333;
 }
 
 header {
+  background: linear-gradient(to right, #6a0dad, #9f3ddc);
+  color: white;
   text-align: center;
-  padding: 2rem;
-  background: linear-gradient(90deg, #fbc2eb 0%, #a6c1ee 100%);
-  color: #fff;
-  border-radius: 0 0 30px 30px;
+  padding: 30px 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-h1 {
-  margin: 0;
-  font-size: 2.5rem;
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
-#shop h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 2rem;
-  color: #d63384;
+.subtext {
+  font-size: 1.1em;
+  color: #ffd9fa;
 }
 
-.product-grid {
+/* Product Grid */
+.products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
+  gap: 25px;
+  padding: 40px 20px;
 }
 
-.product-card {
+.product {
   background: white;
-  border-radius: 16px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  padding: 1.5rem;
-  text-align: center;
-  transition: transform 0.3s;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.product-card:hover {
+.product:hover {
   transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
 }
 
-.product-card img {
+.product img {
   width: 100%;
-  border-radius: 12px;
-  height: 180px;
-  object-fit: cover;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 15px;
 }
 
-.product-card h3 {
-  color: #6f42c1;
-  margin: 1rem 0 0.5rem;
+.product h3 {
+  margin: 15px 0 10px;
+  color: #6a0dad;
 }
 
-.product-card p {
-  font-size: 1.1rem;
-  color: #444;
-  margin-bottom: 1rem;
+.price {
+  font-size: 1.3em;
+  color: #d62828;
+  margin-bottom: 5px;
 }
 
-button {
-  background-color: #ff6f91;
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 0.95em;
+}
+
+.features {
+  text-align: left;
+  margin-top: 10px;
+  font-size: 0.95em;
+}
+
+.features ul {
+  padding-left: 20px;
+}
+
+.order-button {
+  display: inline-block;
+  margin-top: 12px;
+  background: #6a0dad;
   color: white;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  font-size: 1rem;
+  padding: 10px 18px;
   border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
 }
 
-button:hover {
-  background-color: #d61e55;
+.order-button:hover {
+  background: #510c94;
+}
+
+/* Info Sections */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #6a0dad;
+}
+
+section p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Why Us List */
+section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.05em;
+}
+
+section ul li {
+  margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #5a2a82;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+footer a {
+  color: #ffd6ff;
+  text-decoration: none;
+  font-weight: bold;
 }
